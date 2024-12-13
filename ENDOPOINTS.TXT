@@ -1,0 +1,55 @@
+----------------------------------------------------
+
+Endpoint: /api/users/{id}
+Método: GET
+Descripción: Obtiene detalles de un usuario específico por ID.
+Parámetros:
+- id (ruta): ID del usuario.
+Respuesta de Ejemplo:
+{
+    "status": "success",
+    "data": { "id": 1, "Nombre": "Juan Torres" }
+}
+
+----------------------------------------------------
+
+Endpoint: /api/users
+Método: POST
+Descripción: Crea un nuevo usuario.
+Parámetros:
+- name: Nombre del usuario (String).
+
+{
+    "status": "success",
+    "message": "Usuario creado con éxito",
+    "data": { "id": 3, "Nombre": "Arley Torres" }
+}
+Endpoint: /api/users
+Método: GET
+Descripción: Obtiene una lista de todos los usuarios.
+Parámetros: Ninguno.
+
+    "status": "success",
+    "data": [
+        { "id": 1, "Nombre": "Arley" },
+        { "id": 2, "Isabel": "Alvarez" }
+    ]
+
+
+----------------------------------------------------
+
+Endpoint: /api/users/{id}
+Método: GET
+Descripción:  usuario específico por ID.
+Parámetros:
+- id (ruta): ID del usuario.
+
+{
+    "status": "success",
+    "data": { "id": 2, "nombre": "Isabel Alvarez" }
+}
+
+----------------------------------------------------
+
+
+
